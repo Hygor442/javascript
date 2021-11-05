@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Receitas do dia</h1>
+        <ul>
+            <a href="#">link </a>
+            <a href="#">link </a>
+            <a href="#">link </a>
+            <a href="#">link </a>
+            <a href="#">link </a>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <article>
+            <section>
+                <h2>Qual você deseja escolher?</h2>
+                <p>Receitas: <input type="text" name="receitas" id="receitas">
+                <input type="button" value="Pesquisar" onclick="clicar()"></p>
+                <div id="caixa">Preparo:
+                <div id="res"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+    <aside>
+        <h2>Contatos</h2>
+        <p>HygorCozinha <br>
+            São Paulo Sp
+        </p>
+    </aside>
+        &reg;HygorProjects
+    </footer>
+
+    <script>
+        function clicar(){
+            var recp = window.document.getElementById('receitas')
+            var res = window.document.getElementById('res')
+
+            var val = String(recp.value)
+            res.innerText = `Aqui está a sua receita, ${val}`
+
+            if(val == 'ovo frito'){
+            res.innerHTML = '<p>Numa tigela pequena quebre o ovo, com cuidado para não furar a gema. <br> Leve uma frigideira antiaderente ao fogo baixo e regue com 1 colher (chá) de azeite. Com cuidado, transfira o ovo para a frigideira e deixe cozinhar por cerca de 2 minutos –  com uma espátula de silicone, vá puxando a borda da clara para perto da gema, para manter o formato arredondado do ovo. <br> Assim que a clara começar a firmar, tempere com sal e pimenta a gosto e tampe a frigideira para o ovo terminar de fritar mas a gema ainda ficar mole – o vapor permite que a clara cozinhe por igual sem a base do ovo queimar. Sirva a seguir</p>'
+            }else(
+            res.innerHTML = 'Desculpe não achamos isso em nosso livro de receitas...')
+        }
+    </script>
+</body>
+</html>

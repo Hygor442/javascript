@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua nacionalidade</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+        main{
+        background-color: rgba(0, 45, 180, 0.568);
+        width: 600px;
+        height: 210px;
+        padding:5px 5px 5px 5px;
+        border-radius: 10px 0px;
+        margin: auto;
+        }
+        #res{
+            color: rgba(206, 3, 3, 0.658);
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h2>Sua Nacionalidade</h2>
+    Qual o seu país? <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+    </main>
+    <script>
+        function clicar(){
+            var paisp = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            var val = String(paisp.value)
+            res.innerText = `Seu país é ${val}`
+            if(val == 'Brasil'){
+                res.innerHTML = 'Você é brasileiro'
+            }else(
+                res.innerHTML = 'Você é estrangeiro')
+        }
+    </script>
+</body>
+</html>

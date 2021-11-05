@@ -1,0 +1,63 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+header{
+    border: solid rgba(0, 0, 0, 0.349) 5px;
+    border-radius: 12px 0px;
+    text-align: center;
+    background-image: linear-gradient(to left, #b9d62996 ,#EEE538);
+    width: 700px;
+    margin: auto;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: auto 40px;
+    font-weight: normal;
+    padding: 10px;
+    background-color: #ECE8F1;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: #BF3A0A;
+    font-weight: bold;
+    background-color: #F2F2F2;
+}
+
+hr{
+    width: 750px;
+    height: 05px;
+    background-color: black;
+    border-color: black;
+}
+
+main{
+    margin:auto;
+    background-color: #F2DC6D;
+    height: 300px;
+    width: 700px;
+    padding: 10px 10px 14px 10px;
+
+    border-radius: 0px 12px;
+    border: solid 4px #f274053b
+}
+div#caixa{
+    background-color: #F2F2F2;
+    padding: 5px;
+    text-align: justify;
+}
+
+footer{
+    margin:10px auto;
+    border: solid;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.623);
+
+    height: 150px;
+    width: 700px;
+}

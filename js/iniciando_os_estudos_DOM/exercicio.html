@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passarporte</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        main{
+            background-color: rgba(123, 53, 189, 0.61);
+            margin: 50px auto;
+            padding: 15px;
+            width: 550px;
+            height: 210px;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+        #res{
+            color: rgba(216, 50, 50, 0.733);
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h2> Sua nacionalidade </h2>
+    Qual o seu país ? <input type="text" name="pais" id="pais">
+    <input type="button" value="Pesquisar" onclick="clicar()">
+    <div id="res"></div>
+    </main>
+    <script>
+        function clicar(){
+            var paisp = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            var vel = String(paisp.value)
+            res.innerText = `Seu pais é ${vel}` 
+        if(vel == 'Brasil'){
+            res.innerHTML = 'Você é Brasileiro'
+        }else(
+            res.innerHTML = 'Você é estrangeiro'
+        )
+
+        }
+    </script>
+</body>
+</html>
